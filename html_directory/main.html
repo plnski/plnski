@@ -3,68 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>plnski and her photography work</title>
+  <title>main page</title>
+  <link rel="stylesheet" href="../js_css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: url('website_background_main.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #f0e7d5;
-    }
-
-    header, main, footer {
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #f0e7d5;
-    }
-
-    .ellipse {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 190px;
-      margin: 0px;
-    }
-
-    .ellipse svg {
-      width: 150px;
-      height: 180px;
-    }
-
-    svg text {
-      fill: #f0e7d5;
-      font-family: sans-serif;
-      font-size: 16px;
-      letter-spacing: 1px;
-    }
-    a:link {
-        text-decoration: none;
-    }
-    a:hover {
-        color: #9b103e;
-    }
-    a {
-      color: #f0e7d5;
-    }
-  </style>
 </head>
 
-<body>
+<body class="main">
 
   <nav class="navbar">
     <ul>
@@ -81,7 +25,7 @@
         <path id="circlePath" d="M100,100 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0" />
       </defs>
 
-      <image href="plnski logo.png" x="5" y="-5" width="200" height="200" style="clip-path: circle(100px);" />
+      <image xlink:href="../all_pics/plnski_logo_clear.png"... x="5" y="2" width="200" height="200" style="clip-path: circle(100px);" />
 
       <g id="rotatingText">
         <text>
@@ -96,10 +40,6 @@
   <main>
     <h3>They said I need a portfolio so... hell yeah</h3>
   </main>
-
-  <div style="text-align: center;">
-    <a href="https://www.instagram.com/plnski/" target="_blank">instagram: plnski</a>
-  </div>
 
   <script>
     window.addEventListener("DOMContentLoaded", () => {

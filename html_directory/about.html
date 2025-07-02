@@ -3,68 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>plnski and her photography work</title>
+  <title>about plnski</title>
+  <link rel="stylesheet" href="../js_css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: url('website_background_about.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #f0e7d5;
-    }
+  main {
+    max-width: 750px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #f0f0f0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
 
-    header, main, footer {
-      text-align: center;
-      padding: 2rem;
-    }
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
 
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0;
-    }
+  .about-photo {
+  display: block;
+  width: 220px;              /* Adjust size as needed */
+  height: 220px;
+  margin: 0 auto 1.5rem auto; /* Centers image */
+  
+  object-fit: cover;         /* Ensures proper cropping */
+}
 
-    .navbar a {
-      text-decoration: none;
-      color: #f0e7d5;
-    }
+  main p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+</style>
 
-    .ellipse {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 190px;
-      margin: 0px;
-    }
-
-    .ellipse svg {
-      width: 150px;
-      height: 180px;
-    }
-
-    svg text {
-      fill: #f0e7d5;
-      font-family: sans-serif;
-      font-size: 16px;
-      letter-spacing: 1px;
-    }
-    a:link {
-        text-decoration: none;
-    }
-    a:hover {
-        color: #9b103e;
-    }
-    a {
-      color: #f0e7d5;
-    }
-  </style>
 </head>
 
-<body>
+<body class="about">
 
   <nav class="navbar">
     <ul>
@@ -81,7 +61,7 @@
         <path id="circlePath" d="M100,100 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0" />
       </defs>
 
-      <image href="plnski logo.png" x="5" y="-5" width="200" height="200" style="clip-path: circle(100px);" />
+      <image xlink:href="../all_pics/plnski_logo_clear.png" x="5" y="2" width="200" height="200" style="clip-path: circle(100px);" />
 
       <g id="rotatingText">
         <text>
@@ -95,19 +75,19 @@
 
   <main>
     <h3>about</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text
-      ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it to make a type specimen book. It has survived not
-      only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged. It was popularised in the 1960s with
-      the release of Letraset sheets containing Lorem Ipsum passages, and
-      more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ipsum.</p>
+
+    <!-- About image -->
+    <img src="../all_pics/about_picture2.png" alt="About plnski" class="about-photo" />
+
+    <p>Born in Moscow (Russia), raised in Hessen (Germany), and currently based in Berlin (Germany). Silly shortie, obsessed with memes and standup comedy. Coffee in the mornings, beer somewhere in between. But all of this is not as important as my 10+ years of photography experience and a bunch of other cool stuff that I did.</p>
+
+    <p>My current priority is to document, archive and expand my photography work publicly. Lots of my older work (before 2018) did not make it until this day, except for if I’m actually gonna find the photos somewhere in the darkest corners of my ancient SD cards or something like that one day.</p>
+
+    <p>However, the more I shoot the more confident I become and can see the quality development.</p>
   </main>
 
   <div style="text-align: center;">
-    <a href="https://www.instagram.com/plnski/" target="_blank">instagram: plnski</a>
+    <a href="https://www.instagram.com/plnski/" target="_blank">instagram</a>
   </div>
 
   <script>
